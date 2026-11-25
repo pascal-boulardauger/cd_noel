@@ -37,6 +37,38 @@ body {
     padding: 30px 20px;
 }
 
+.home-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.home-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 153, 153, 0.35);
+    background: rgba(255, 153, 153, 0.08);
+    color: #FF9999;
+    text-decoration: none;
+    transition: transform 200ms ease, background 200ms ease, border-color 200ms ease;
+}
+
+.home-btn:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 153, 153, 0.16);
+    border-color: rgba(255, 153, 153, 0.6);
+}
+
+.home-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
 img {
     max-width: 100%;
     border-radius: 15px;
@@ -91,6 +123,14 @@ p {
 
 <div class="container">
 
+<div class="home-row">
+  <a class="home-btn" href="https://pascal-boulardauger.github.io/cds/" aria-label="Retour à la liste des CD">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 3.2 2.5 10.6a1 1 0 0 0 .6 1.8H4V20a1 1 0 0 0 1 1h4.5a1 1 0 0 0 1-1v-5h2.9v5a1 1 0 0 0 1 1H19a1 1 0 0 0 1-1v-7.6h.9a1 1 0 0 0 .6-1.8L12 3.2Z" />
+    </svg>
+  </a>
+</div>
+
 <img src="https://pascal-boulardauger.github.io/cd_noel/cd_recto.png" alt="Mon Noël" width="70%" height="50%" border="0">
 
 <h1>Mon album musical de Noël</h1>
@@ -98,7 +138,7 @@ p {
 Bienvenue dans mon album musical de Noël.
 </p>
 
-<a class="bouton" 
+<a class="bouton"
 href="http://boulard.pascal.free.fr/cd_noel/" >
 D&eacute;couvrir l'album
 </a>
